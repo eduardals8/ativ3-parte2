@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main () {
+	setlocale(LC_ALL,"Portuguese");
+	
+	int i;
+	int num;
+	int soma;
+	
+	printf("Digite um número\n");
+	scanf("%i", &num);
+	printf("Soma dos %i", num, "números da sequência: ");
+	
+	while(i<=num){
+		soma = soma + i;
+		i++;
+	} 
+	
+	printf(" %i", soma);
+	
+	return 0;
+}
